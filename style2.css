@@ -1,0 +1,139 @@
+*::after::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+
+/* ### Neutral */
+
+/* Transparent (paragraphs): */
+    --white :hsla(0, 0%, 100%, 0.75);
+/* (background, headings, buttons) */
+    --Verylightgray : hsl(0, 0%, 95%);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lexend Deca", sans-serif;
+
+
+}
+.main{
+    height: 450px;
+    width: 831px;
+    box-sizing: border-box;
+    display: flex;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    color: var(--white);
+    
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing: -2px;
+
+}
+p{  
+    font-size: 15px;
+line-height: 26px
+}
+.chaild1{
+    border-radius: 15px 0px 0px 15px;
+    height: 500px;
+    width: 277px;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: var(--Brightorange);
+    
+}
+.chaild2{
+    height: 500px;
+    width: 277px;
+    box-sizing: border-box;
+    padding: 40px 20px 0px 40px;
+    background-color: var(--Darkcyan);
+    
+}
+.chaild3{
+    height: 500px;
+    width: 277px;
+    box-sizing: border-box;
+    padding: 40px 20px 0px 40px;
+    
+    background-color: var(--Verydarkcyan);
+    border-radius: 0px 15px 15px 0px;
+    
+}
+.chaild1 button{
+    margin-top: 80px;
+    padding: 15px 35px;
+    transition-duration: 0.5s;
+    border-radius: 30px;
+    border: 3px solid white;
+    color: var(--Brightorange);
+}
+.chaild1 button:hover{
+    background-color: var(--Brightorange);
+    color: white;
+}
+.chaild2 button{
+    margin-top: 80px;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 3px solid white;
+    transition-duration: 0.5s;
+    color: var(--Darkcyan);
+    
+}
+.chaild2 button:hover{
+    background-color: var(--Darkcyan);
+    color: var(--white);
+}
+.chaild3 button{
+    margin-top: 80px;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 3px solid white;
+    color: var(--Verydarkcyan);
+    transition-duration: 0.5s;
+
+}
+.chaild3 button:hover{
+    background-color: var(--Verydarkcyan);
+    color: white;
+}
+@media screen and (max-width:450px) {
+    .main{
+       display: grid ;
+        margin-left: 50px;
+    }
+    .chaild1{
+        border-radius: 15px 15px 0px 0px ;
+        width: 80%;
+        min-width: 277px;
+    }
+    .chaild2{
+        min-width: 277px;
+        width: 80%;
+    }
+    
+    
+    .chaild3{
+        border-radius: 0px 0px 15px 15px ;
+        
+        min-width: 277px;
+        width: 80%;
+
+    }
+
+
+}
